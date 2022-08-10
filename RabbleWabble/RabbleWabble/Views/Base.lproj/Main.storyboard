@@ -38,11 +38,17 @@
                                 <rect key="frame" x="32" y="697" width="104" height="94"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="ic_circle_x"/>
+                                <connections>
+                                    <action selector="handleIncorrect:" destination="BYZ-38-t0r" eventType="touchUpInside" id="OHX-gC-ck7"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gax-n2-Bw6">
                                 <rect key="frame" x="278" y="697" width="104" height="94"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="ic_circle_check"/>
+                                <connections>
+                                    <action selector="handleCorrect:" destination="BYZ-38-t0r" eventType="touchUpInside" id="he1-0q-O1b"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sjb-MT-tS4">
                                 <rect key="frame" x="74" y="799" width="20" height="39"/>
@@ -59,6 +65,7 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="jiZ-ya-LbA" firstAttribute="centerX" secondItem="gax-n2-Bw6" secondAttribute="centerX" id="4yz-Kk-TkQ"/>
                             <constraint firstItem="jiZ-ya-LbA" firstAttribute="top" secondItem="gax-n2-Bw6" secondAttribute="bottom" constant="8" id="50o-yv-q9K"/>
@@ -84,10 +91,16 @@
                             <outlet property="hintLabel" destination="NKB-Kt-tVI" id="reE-dE-Yiw"/>
                             <outlet property="incorrectCountLabel" destination="Sjb-MT-tS4" id="0R0-xt-Vn2"/>
                             <outlet property="promptLabel" destination="13E-B9-ga9" id="GSI-Dm-2rm"/>
+                            <outletCollection property="gestureRecognizers" destination="BzA-yh-0Vv" appends="YES" id="MLk-YO-nWb"/>
                         </connections>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="BzA-yh-0Vv">
+                    <connections>
+                        <action selector="toggleAnswerLabels:" destination="BYZ-38-t0r" id="Cam-2f-L9u"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="126" y="102"/>
         </scene>
