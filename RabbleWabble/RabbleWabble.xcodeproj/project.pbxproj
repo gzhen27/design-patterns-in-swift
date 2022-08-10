@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EB5E7F9D28A404DB00CCF88F /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB5E7F9C28A404DB00CCF88F /* Question.swift */; };
+		EB5E7F9F28A4050D00CCF88F /* QuestionGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB5E7F9E28A4050D00CCF88F /* QuestionGroup.swift */; };
 		EBBE32A128A34EE5009179BE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBBE32A028A34EE5009179BE /* AppDelegate.swift */; };
 		EBBE32A328A34EE5009179BE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBBE32A228A34EE5009179BE /* SceneDelegate.swift */; };
 		EBBE32A528A34EE5009179BE /* QuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBBE32A428A34EE5009179BE /* QuestionViewController.swift */; };
@@ -37,6 +39,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		EB5E7F9C28A404DB00CCF88F /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
+		EB5E7F9E28A4050D00CCF88F /* QuestionGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionGroup.swift; sourceTree = "<group>"; };
 		EBBE329D28A34EE5009179BE /* RabbleWabble.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RabbleWabble.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBBE32A028A34EE5009179BE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EBBE32A228A34EE5009179BE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -98,6 +102,8 @@
 		EB9B180728A3FF2400658716 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				EB5E7F9C28A404DB00CCF88F /* Question.swift */,
+				EB5E7F9E28A4050D00CCF88F /* QuestionGroup.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -301,8 +307,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EB5E7F9D28A404DB00CCF88F /* Question.swift in Sources */,
 				EBBE32A528A34EE5009179BE /* QuestionViewController.swift in Sources */,
 				EBBE32A128A34EE5009179BE /* AppDelegate.swift in Sources */,
+				EB5E7F9F28A4050D00CCF88F /* QuestionGroup.swift in Sources */,
 				EBBE32AB28A34EE5009179BE /* RabbleWabble.xcdatamodeld in Sources */,
 				EBBE32A328A34EE5009179BE /* SceneDelegate.swift in Sources */,
 			);
