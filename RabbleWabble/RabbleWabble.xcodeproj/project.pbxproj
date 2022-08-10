@@ -10,13 +10,14 @@
 		EB5E7F9D28A404DB00CCF88F /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB5E7F9C28A404DB00CCF88F /* Question.swift */; };
 		EB5E7F9F28A4050D00CCF88F /* QuestionGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB5E7F9E28A4050D00CCF88F /* QuestionGroup.swift */; };
 		EB5E7FA328A417C700CCF88F /* QuestionGroupData.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB5E7FA228A417C700CCF88F /* QuestionGroupData.swift */; };
+		EB5E7FA528A443DB00CCF88F /* QuestionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB5E7FA428A443DB00CCF88F /* QuestionView.swift */; };
+		EB5E7FA728A4646800CCF88F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB5E7FA628A4646800CCF88F /* LaunchScreen.storyboard */; };
+		EB5E7FA928A4648900CCF88F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB5E7FA828A4648900CCF88F /* Assets.xcassets */; };
 		EBBE32A128A34EE5009179BE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBBE32A028A34EE5009179BE /* AppDelegate.swift */; };
 		EBBE32A328A34EE5009179BE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBBE32A228A34EE5009179BE /* SceneDelegate.swift */; };
 		EBBE32A528A34EE5009179BE /* QuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBBE32A428A34EE5009179BE /* QuestionViewController.swift */; };
 		EBBE32A828A34EE5009179BE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EBBE32A628A34EE5009179BE /* Main.storyboard */; };
 		EBBE32AB28A34EE5009179BE /* RabbleWabble.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EBBE32A928A34EE5009179BE /* RabbleWabble.xcdatamodeld */; };
-		EBBE32AD28A34EE8009179BE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EBBE32AC28A34EE8009179BE /* Assets.xcassets */; };
-		EBBE32B028A34EE8009179BE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EBBE32AE28A34EE8009179BE /* LaunchScreen.storyboard */; };
 		EBBE32BB28A34EE8009179BE /* RabbleWabbleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBBE32BA28A34EE8009179BE /* RabbleWabbleTests.swift */; };
 		EBBE32C528A34EE8009179BE /* RabbleWabbleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBBE32C428A34EE8009179BE /* RabbleWabbleUITests.swift */; };
 		EBBE32C728A34EE8009179BE /* RabbleWabbleUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBBE32C628A34EE8009179BE /* RabbleWabbleUITestsLaunchTests.swift */; };
@@ -43,14 +44,15 @@
 		EB5E7F9C28A404DB00CCF88F /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
 		EB5E7F9E28A4050D00CCF88F /* QuestionGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionGroup.swift; sourceTree = "<group>"; };
 		EB5E7FA228A417C700CCF88F /* QuestionGroupData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionGroupData.swift; sourceTree = "<group>"; };
+		EB5E7FA428A443DB00CCF88F /* QuestionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionView.swift; sourceTree = "<group>"; };
+		EB5E7FA628A4646800CCF88F /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EB5E7FA828A4648900CCF88F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EBBE329D28A34EE5009179BE /* RabbleWabble.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RabbleWabble.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBBE32A028A34EE5009179BE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EBBE32A228A34EE5009179BE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		EBBE32A428A34EE5009179BE /* QuestionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionViewController.swift; sourceTree = "<group>"; };
 		EBBE32A728A34EE5009179BE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EBBE32AA28A34EE5009179BE /* RabbleWabble.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = RabbleWabble.xcdatamodel; sourceTree = "<group>"; };
-		EBBE32AC28A34EE8009179BE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		EBBE32AF28A34EE8009179BE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EBBE32B128A34EE8009179BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EBBE32B628A34EE8009179BE /* RabbleWabbleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RabbleWabbleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBBE32BA28A34EE8009179BE /* RabbleWabbleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RabbleWabbleTests.swift; sourceTree = "<group>"; };
@@ -114,7 +116,7 @@
 		EB9B180828A3FF2A00658716 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				EBBE32AC28A34EE8009179BE /* Assets.xcassets */,
+				EB5E7FA828A4648900CCF88F /* Assets.xcassets */,
 				EBBE32B128A34EE8009179BE /* Info.plist */,
 			);
 			path = Resources;
@@ -124,7 +126,8 @@
 			isa = PBXGroup;
 			children = (
 				EBBE32A628A34EE5009179BE /* Main.storyboard */,
-				EBBE32AE28A34EE8009179BE /* LaunchScreen.storyboard */,
+				EB5E7FA628A4646800CCF88F /* LaunchScreen.storyboard */,
+				EB5E7FA428A443DB00CCF88F /* QuestionView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -283,9 +286,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EBBE32B028A34EE8009179BE /* LaunchScreen.storyboard in Resources */,
-				EBBE32AD28A34EE8009179BE /* Assets.xcassets in Resources */,
 				EBBE32A828A34EE5009179BE /* Main.storyboard in Resources */,
+				EB5E7FA928A4648900CCF88F /* Assets.xcassets in Resources */,
+				EB5E7FA728A4646800CCF88F /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -310,6 +313,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EB5E7FA528A443DB00CCF88F /* QuestionView.swift in Sources */,
 				EB5E7F9D28A404DB00CCF88F /* Question.swift in Sources */,
 				EBBE32A528A34EE5009179BE /* QuestionViewController.swift in Sources */,
 				EBBE32A128A34EE5009179BE /* AppDelegate.swift in Sources */,
@@ -359,14 +363,6 @@
 				EBBE32A728A34EE5009179BE /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		EBBE32AE28A34EE8009179BE /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				EBBE32AF28A34EE8009179BE /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
