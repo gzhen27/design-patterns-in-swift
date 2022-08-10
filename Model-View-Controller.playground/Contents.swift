@@ -21,7 +21,13 @@ public final class AddressView: UIView {
 public final class AddressViewController: UIViewController {
     
     // MARK: Properties
-    public var address: Address?
+    public var address: Address? {
+        // when the Model being updates, Controller should also update the VIew
+        didSet {
+            updateViewFromAddress()
+        }
+    }
+    
     public var addressView: AddressView! {
         guard isViewLoaded else { return nil }
         return (view as! AddressView)
