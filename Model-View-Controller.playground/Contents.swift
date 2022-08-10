@@ -3,9 +3,9 @@ import UIKit
 // MARK: - Address(Model)
 public struct Address {
     public var street: String
-    var city: String
-    var state: String
-    var zipCode: String
+    public var city: String
+    public var state: String
+    public var zipCode: String
 }
 
 
@@ -19,10 +19,26 @@ public final class AddressView: UIView {
 
 // MARK: - AddressViewController(Controller)
 public final class AddressViewController: UIViewController {
+    
     // MARK: Properties
     public var address: Address?
     public var addressView: AddressView! {
         guard isViewLoaded else { return nil }
-        return view as! AddressView
+        return (view as! AddressView)
+    }
+    
+    public override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        // Controller should update the View using the values from the Model.
+        updateViewFromAddress()
+    }
+    
+    private func updateViewFromAddress() {
+        guard let addressView = addressView, let address = address else { return }
+        addressView.streetTextField.text = address.street
+        addressView.cityTextField.text = address.city
+        addressView.stateTextField.text = address.state
+        addressView.zipCodeTextField.text = address.zipCode
     }
 }
