@@ -4,4 +4,7 @@
    <FileRef
       location = "group:Model-View-Controller.playground">
    </FileRef>
+   <FileRef
+      location = "container:Delegation.playground">
+   </FileRef>
 </Workspace>
