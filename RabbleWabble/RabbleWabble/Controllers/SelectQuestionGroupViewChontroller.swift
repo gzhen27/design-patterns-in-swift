@@ -15,9 +15,9 @@ public class SelectQuestionGroupViewController: UIViewController {
     // MARK: - Outlets
     @IBOutlet internal var tableView: UITableView! {
         didSet {
-            tableView.tableFooterView = UIView()
             tableView.dataSource = self
-            tableView.delegate = self 
+            tableView.delegate = self
+            tableView.tableFooterView = UIView()
         }
     }
 }
