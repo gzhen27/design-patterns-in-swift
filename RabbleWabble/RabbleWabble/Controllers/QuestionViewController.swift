@@ -7,9 +7,23 @@
 
 import UIKit
 
+public protocol QuestionViewControllerDelegate: AnyObject {
+    /**
+     calls when all qustions of the current quesiton group were completed
+     */
+    func questionViewController(_ viewController: QuestionViewController, didComplete questionGroup: QuestionGroup)
+    
+    /**
+     calls when cancel and quit the current question group
+     */
+    func questionViewController(_ viewController: QuestionViewController, didCancel questionGroup: QuestionGroup, at questionIndex: Int)
+}
+
 public class QuestionViewController: UIViewController {
 
     // MARK: - Instance Properties
+    public weak var delegate: QuestionViewControllerDelegate?
+    
     public var questionGroup: QuestionGroup! {
         didSet {
             navigationItem.title = questionGroup.title
@@ -36,6 +50,7 @@ public class QuestionViewController: UIViewController {
     // MARK: - Lifecycle
     public override func viewDidLoad() {
         super.viewDidLoad()
+        setupCancelButton()
         showQuestion()
     }
     
@@ -51,6 +66,17 @@ public class QuestionViewController: UIViewController {
         questionView.hintLabel.isHidden = true
         
         questionIndexItem.title = "\(questionIndex+1)/\(questionGroup.questions.count)"
+    }
+    
+    private func setupCancelButton() {
+        let action = #selector(handleCancelPressed(sender:))
+        let image = UIImage(named: "ic_menu")
+        navigationItem.leftBarButtonItem = UIBarButtonItem(image: image, style: .plain, target: self, action: action)
+        navigationItem.leftBarButtonItem?.tintColor = .black
+    }
+    
+    @objc private func handleCancelPressed(sender: UIBarButtonItem) {
+        delegate?.questionViewController(self, didCancel: questionGroup, at: questionIndex)
     }
     
     // MARK: - Actions
@@ -73,7 +99,10 @@ public class QuestionViewController: UIViewController {
     
     private func showNextQuestion() {
         questionIndex += 1
-        guard questionIndex < questionGroup.questions.count else { return }
+        guard questionIndex < questionGroup.questions.count else {
+            delegate?.questionViewController(self, didComplete: questionGroup)
+            return
+        }
         showQuestion()
     }
     
